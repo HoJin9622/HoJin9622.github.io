@@ -213,7 +213,7 @@ const number = user[2];</code></pre><p>After: ES6</p>
 const age = req.body.age;
 const number = req.body.number;</code></pre><p>After: ES6</p>
 <pre><code>const {name, age, number} = req.body;</code></pre><p>변수의 이름과 같은 객체 key의 값이 대입된다.</p>
-<h3 id="스프레드-연산자-활용"><a href="#스프레드-연산자-활용" class="headerlink" title="스프레드 연산자 활용"></a>스프레드 연산자 활용</h3><pre><code>const user = [&quot;id&quot;, &quot;name&quot;, &quot;age&quot;, &quot;number&quot;];
+<h3 id="Rest-parameter-활용"><a href="#Rest-parameter-활용" class="headerlink" title="Rest parameter 활용"></a>Rest parameter 활용</h3><pre><code>const user = [&quot;id&quot;, &quot;name&quot;, &quot;age&quot;, &quot;number&quot;];
 const [id, ...userInfo] = user;
 
 console.log(id); // id
