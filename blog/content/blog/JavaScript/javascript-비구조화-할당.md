@@ -5,7 +5,7 @@ category: JavaScript
 draft: false
 ---
 
-# 비구조화 할당이란?
+## 비구조화 할당이란?
 
 비구조화 할당은 ECMA 2015 의 새로운 문법이다.
 
@@ -13,9 +13,9 @@ draft: false
 
 [문서](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
-# 사용법
+## 사용법
 
-## 배열
+### 배열
 
 Before: ES5
 
@@ -32,7 +32,7 @@ After: ES6
 const [name, age, number] = ['name', 'age', 'number']
 ```
 
-## 객체
+### 객체
 
 Before: ES5
 
@@ -50,7 +50,7 @@ const { name, age, number } = req.body
 
 변수의 이름과 같은 객체 key의 값이 대입된다.
 
-## 스프레드 연산자 활용
+### 스프레드 연산자 활용
 
 ```js
 const user = ['id', 'name', 'age', 'number']

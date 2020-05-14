@@ -5,7 +5,7 @@ category: Python
 draft: false
 ---
 
-## Python pip&virtualenv를 이용한 가상환경 셋팅
+## pip & virtualenv 란?
 
 pip는 PyPI 저장소로부터 파이썬 패키지를 설치해주는 패키지 매니저이다.
 
