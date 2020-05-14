@@ -29,7 +29,7 @@
  
 <meta name="description" content="설명" />
   
-<title>JavaScript 비구조화 할당 | HoJin&#39;s devlog</title>
+<title>Python pip&amp;virtualenv를 이용한 가상환경 셋팅 | HoJin&#39;s devlog</title>
 
  
 <link rel="icon" href="/favicon.ico" />
@@ -175,7 +175,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">JavaScript 비구조화 할당</h1>
+            <h1 class="post-title">Python pip&amp;virtualenv를 이용한 가상환경 셋팅</h1>
             
                 <div class="post-meta">
                     
@@ -184,14 +184,14 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">May 9, 2020&nbsp;&nbsp;1:21:41</a>
+                        Date: <a href="#">May 14, 2020&nbsp;&nbsp;19:04:38</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/categories/JavaScript/">JavaScript</a>
+                                <a href="/categories/Python/">Python</a>
                             
                         </span>
                     
@@ -200,24 +200,20 @@
         </header>
 
         <div class="post-content">
-            <h2 id="비구조화-할당이란"><a href="#비구조화-할당이란" class="headerlink" title="비구조화 할당이란?"></a>비구조화 할당이란?</h2><p>비구조화 할당은 ECMA 2015 의 새로운 문법이다.<br>배열과 객체에 적용할 수 있다.</p>
-<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank">문서</a></p>
+            <h2 id="Python-pip-amp-virtualenv를-이용한-가상환경-셋팅"><a href="#Python-pip-amp-virtualenv를-이용한-가상환경-셋팅" class="headerlink" title="Python pip&amp;virtualenv를 이용한 가상환경 셋팅"></a>Python pip&amp;virtualenv를 이용한 가상환경 셋팅</h2><p>pip는 PyPI 저장소로부터 파이썬 패키지를 설치해주는 패키지 매니저이다.<br>Node.js의 npm, yarn과 비슷하다.<br><code>pip install &lt;package name&gt;</code>을 이용하여 패키지를 설치할 경우 global하게 설치된다.<br>이 문제를 해결하기위해 virtualenv를 사용한다.<br>virtualenv는 각 프로그램별로 가상의 환경을 만들어낸다.<br>npm으로 따지면 node_module 폴더와 비슷하다.</p>
 <hr>
-<h2 id="사용법"><a href="#사용법" class="headerlink" title="사용법"></a>사용법</h2><h3 id="배열"><a href="#배열" class="headerlink" title="배열"></a>배열</h3><p>Before: ES5</p>
-<pre><code>const user = [&quot;name&quot;, &quot;age&quot;, &quot;number&quot;];
-const name = user[0];
-const age = user[1];
-const number = user[2];</code></pre><p>After: ES6</p>
-<pre><code>const [name, age, number] = [&quot;name&quot;, &quot;age&quot;, &quot;number&quot;];</code></pre><h3 id="객체"><a href="#객체" class="headerlink" title="객체"></a>객체</h3><p>Before: ES5</p>
-<pre><code>const name = req.body.name;
-const age = req.body.age;
-const number = req.body.number;</code></pre><p>After: ES6</p>
-<pre><code>const {name, age, number} = req.body;</code></pre><p>변수의 이름과 같은 객체 key의 값이 대입된다.</p>
-<h3 id="Rest-parameter-활용"><a href="#Rest-parameter-활용" class="headerlink" title="Rest parameter 활용"></a>Rest parameter 활용</h3><pre><code>const user = [&quot;id&quot;, &quot;name&quot;, &quot;age&quot;, &quot;number&quot;];
-const [id, ...userInfo] = user;
+<h2 id="사용법"><a href="#사용법" class="headerlink" title="사용법"></a>사용법</h2><h3 id="virtualenv-설치"><a href="#virtualenv-설치" class="headerlink" title="virtualenv 설치"></a>virtualenv 설치</h3><pre><code>$ pip install virtualenv</code></pre><p>위 명령어를 사용하여 virtualenv를 글로벌하게 설치한다.<br>pip는 python을 설치할때 선택적으로 설치할 수 있으며 설치되어있지 않다면 설치해주도록 하자.</p>
+<h3 id="가상환경-생성"><a href="#가상환경-생성" class="headerlink" title="가상환경 생성"></a>가상환경 생성</h3><pre><code>$ virtualenv venv</code></pre><p>원하는 프로젝트 폴더로 이동 후 위 명령어를 실행하면 venv 라는 폴더가 생성된다.<br>폴더 이름은 입맛에 맞게 변경할 수 있지만 관습적으로 venv, env 라고 짓는다.</p>
+<img src='http://drive.google.com/uc?export=view&id=10LZXPmxZD-SXr5K7yyjcgrfCyllumOfL' alt="folder list"/>
 
-console.log(id); // id
-console.log(userInfo); // [&quot;name&quot;, &quot;age&quot;, &quot;number&quot;]</code></pre>
+<h3 id="가상환경-사용"><a href="#가상환경-사용" class="headerlink" title="가상환경 사용"></a>가상환경 사용</h3><pre><code>$ call venv/scripts/activate</code></pre><p>window 기준이며 위 명령어를 사용하면 venv/scripts 폴더에 패키지들을 설치하겠다는 뜻이다.<br>위 명령어를 실행 후 콘솔창 앞에 (venv) 라는 글자가 붙게된다.</p>
+<pre><code>$ pip install &lt;packagename&gt;</code></pre><p>그 후 <code>pip install &lt;package name&gt;</code>을 사용하면 글로벌하게 설치되는 것이 아닌 가상환경에 라이브러리를 설치하게된다.</p>
+<h3 id="requirements-txt"><a href="#requirements-txt" class="headerlink" title="requirements.txt"></a>requirements.txt</h3><p>requirements.txt 는 이 프로젝트에 설치된 패키지를 나열해준다.</p>
+<pre><code>$ pip freeze &gt; requirements.txt</code></pre><p>위 명령어를 사용하면 설치된 패키지와 버전이 정리되어 저장된다.</p>
+<pre><code>$ pip install -r requirements.txt</code></pre><p>requirements.txt 에 있는 패키지를 다운받으려면 위 명령어를 실행하면 된다.</p>
+<hr>
+<h1 id="마무리"><a href="#마무리" class="headerlink" title="마무리"></a>마무리</h1><p>github에 업로드 할때는 .gitignore 에 env 폴더를 넣어주도록 하자.<br><img src='http://drive.google.com/uc?export=view&id=1nnCiQa3mqOtNB_T5jIINfdnoToqqoF0l' alt="gitignore"/></p>
+
         </div>
 
         
@@ -231,7 +227,7 @@ console.log(userInfo); // [&quot;name&quot;, &quot;age&quot;, &quot;number&quot;
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="https://hojin9622.github.io/2020/05/09/2020-05-09/">https://hojin9622.github.io/2020/05/09/2020-05-09/</a></span>
+                        <span><a href="https://hojin9622.github.io/2020/05/14/2020-05-14/">https://hojin9622.github.io/2020/05/14/2020-05-14/</a></span>
                     </p>
                 
                 
@@ -250,11 +246,11 @@ console.log(userInfo); // [&quot;name&quot;, &quot;age&quot;, &quot;number&quot;
                 <span class="tag">
                     
                     
-                        <a href="/tags/javascript/"># javascript</a>
+                        <a href="/tags/python/"># python</a>
                     
-                        <a href="/tags/%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94-%ED%95%A0%EB%8B%B9/"># 비구조화 할당</a>
+                        <a href="/tags/pip/"># pip</a>
                     
-                        <a href="/tags/ES6/"># ES6</a>
+                        <a href="/tags/virtualenv/"># virtualenv</a>
                     
                         
                 </span>
@@ -267,10 +263,8 @@ console.log(userInfo); // [&quot;name&quot;, &quot;age&quot;, &quot;number&quot;
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2020/05/14/2020-05-14/">Python pip&virtualenv를 이용한 가상환경 셋팅</a>
             
-            
-            <a class="next" rel="next" href="/2020/05/02/2020-05-02/">Hexo로 github.io 블로그 만들기</a>
+            <a class="next" rel="next" href="/2020/05/09/2020-05-09/">JavaScript 비구조화 할당</a>
             
         </section>
 
