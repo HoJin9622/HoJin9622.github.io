@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HoJin9622's Devlog]]></title><description><![CDATA[Devlog]]></description><link>https://hojin9622.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 15 May 2020 04:52:13 GMT</lastBuildDate><item><title><![CDATA[Python pip&virtualenv를 이용한 가상환경 셋팅]]></title><description><![CDATA[pip & virtualenv 란? pip는 PyPI 저장소로부터 파이썬 패키지를 설치해주는 패키지 매니저이다. Node.js의 npm, yarn과 비슷하다. 을 이용하여 패키지를 설치할 경우 global…]]></description><link>https://hojin9622.github.io/Python/python-pip&amp;virtualenv를-이용한-가상환경-셋팅/</link><guid isPermaLink="false">https://hojin9622.github.io/Python/python-pip&amp;virtualenv를-이용한-가상환경-셋팅/</guid><pubDate>Thu, 14 May 2020 19:04:38 GMT</pubDate><content:encoded>&lt;h2 id=&quot;pip--virtualenv-란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#pip--virtualenv-%EB%9E%80&quot; aria-label=&quot;pip  virtualenv 란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;pip &amp;#x26; virtualenv 란?&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HoJin9622's Devlog]]></title><description><![CDATA[Devlog]]></description><link>https://hojin9622.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 15 May 2020 10:22:46 GMT</lastBuildDate><item><title><![CDATA[Python pip&virtualenv를 이용한 가상환경 셋팅]]></title><description><![CDATA[pip & virtualenv 란? pip는 PyPI 저장소로부터 파이썬 패키지를 설치해주는 패키지 매니저이다. Node.js의 npm, yarn과 비슷하다. 을 이용하여 패키지를 설치할 경우 global…]]></description><link>https://hojin9622.github.io/Python/python-pip&amp;virtualenv를-이용한-가상환경-셋팅/</link><guid isPermaLink="false">https://hojin9622.github.io/Python/python-pip&amp;virtualenv를-이용한-가상환경-셋팅/</guid><pubDate>Thu, 14 May 2020 19:04:38 GMT</pubDate><content:encoded>&lt;h2 id=&quot;pip--virtualenv-란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#pip--virtualenv-%EB%9E%80&quot; aria-label=&quot;pip  virtualenv 란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;pip &amp;#x26; virtualenv 란?&lt;/h2&gt;
 &lt;p&gt;pip는 PyPI 저장소로부터 파이썬 패키지를 설치해주는 패키지 매니저이다.&lt;/p&gt;
 &lt;p&gt;Node.js의 npm, yarn과 비슷하다.&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;pip install &amp;lt;package name&amp;gt;&lt;/code&gt;을 이용하여 패키지를 설치할 경우 global하게 설치된다.&lt;/p&gt;
@@ -14,7 +14,25 @@
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ virtualenv venv&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;원하는 프로젝트 폴더로 이동 후 위 명령어를 실행하면 venv 라는 폴더가 생성된다.&lt;/p&gt;
 &lt;p&gt;폴더 이름은 입맛에 맞게 변경할 수 있지만 관습적으로 venv, env 라고 짓는다.&lt;/p&gt;
-&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=10LZXPmxZD-SXr5K7yyjcgrfCyllumOfL&quot; alt=&quot;folder list&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 245px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.285714285714285%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABK0lEQVQoz42STW6DMBCFuUsDDsEG/4DxYGMMJCGJqkhpGyldVt32Gj1Ib1qHqFIXCUJ6kuXF997ozQQRB2wNP7hIAMqriKv5ChDT/Lh++f7E0KxKGwkVstJrFvzEVC7kWXFU6NT0RLekajG0SMAMmEMuimdGkbTUbrJ6Q3TnFTK5oDK86cEgQUiLVT0cP04EDNF9Vq8TcBgccztvlJo1Mb3/Rvf4YEHLTNens10WBlfOZybqCieqwaOLd/R1RPweHKY83lzw1w/WPbVDZre8O3gL2gwrWS+yYnpsmVQd212QqBJlY1nHpfVYAk0sja9tojk/tmS6fXt/JZUT3YHZLXP7UTvWDNzt/f4eJo8PpKCXuUK5Xo5Rf4EwvbAbrHxt10rYKF7+q2fqWn4Bhr+FS5r9prgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;list&quot;
+        title=&quot;list&quot;
+        src=&quot;/static/44f79bf3768bb0c25930d07b5bcbd606/86a2e/list.png&quot;
+        srcset=&quot;/static/44f79bf3768bb0c25930d07b5bcbd606/86a2e/list.png 245w&quot;
+        sizes=&quot;(max-width: 245px) 100vw, 245px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&quot;가상환경-사용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD-%EC%82%AC%EC%9A%A9&quot; aria-label=&quot;가상환경 사용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;가상환경 사용&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ call venv/scripts/activate&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;window 기준이며 위 명령어를 사용하면 venv/scripts 폴더에 패키지들을 설치하겠다는 뜻이다.&lt;/p&gt;
@@ -29,7 +47,25 @@
 &lt;p&gt;requirements.txt 에 있는 패키지를 다운받으려면 위 명령어를 실행하면 된다.&lt;/p&gt;
 &lt;h1 id=&quot;마무리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A7%88%EB%AC%B4%EB%A6%AC&quot; aria-label=&quot;마무리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;마무리&lt;/h1&gt;
 &lt;p&gt;github에 업로드 할때는 .gitignore 에 env 폴더를 넣어주도록 하자.&lt;/p&gt;
-&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1nnCiQa3mqOtNB_T5jIINfdnoToqqoF0l&quot; alt=&quot;gitignore&quot;&gt;</content:encoded></item><item><title><![CDATA[JavaScript 비구조화 할당]]></title><description><![CDATA[비구조화 할당이란? 비구조화 할당은 ECMA 2015 의 새로운 문법이다. 배열과 객체에 적용할 수 있다. 문서 사용법 배열 Before: ES5 After: ES6 객체 Before: ES5 After: ES6 변수의 이름과 같은 객체 key…]]></description><link>https://hojin9622.github.io/JavaScript/javascript-비구조화-할당/</link><guid isPermaLink="false">https://hojin9622.github.io/JavaScript/javascript-비구조화-할당/</guid><pubDate>Sat, 09 May 2020 01:21:41 GMT</pubDate><content:encoded>&lt;h2 id=&quot;비구조화-할당이란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94-%ED%95%A0%EB%8B%B9%EC%9D%B4%EB%9E%80&quot; aria-label=&quot;비구조화 할당이란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;비구조화 할당이란?&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 148px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACOUlEQVQoz12SW2vUQBTH8yEEq71mN5Nkc5uZXOayuW12s8luYrvNypZSUCkUBH1QkXopKoJY9EHw8h188cWP6GTbtVX4MfzPmfkfDmeOpLpMoC3PS+3xi7NlFQp0P7x6JpJeXxJKcZmMeWeZBZjKtteBQRcFHccXQoRdRFSX3lSMDiSat3wGPWBDSThNj57F5hFHooSX5vP7J9PmMC3qtG6Sss73F36SKW708v3HeDSWIVExMYZze/ZQUhDTETmPtWNiAJ4/ffPu09fvT04/fPv85fHp2asXz5+9Pq9me9sw+vnr97Sut0xPc2kvqa3pA0knoUZjQBJAY53GrKwdLkTCi0r1mLgFok8/7NFow8JACBKpLldRAGwk2UnuFjXOJ2hUCqw0d0ZTnJd6VsBx7eSVO56i5S0ei/zETnMFEYCJmJmkYqpA32QDGJcwGho0MYII0EHho7eh1nddGXGLJjirLJZYPLN4aodDu59prdnjYsJ2XARFw8o9NpnDeAh4VlDvR9YbUKKH43h3waoFmzThnYMg3yXFjJT7Bokk4Vx+HRVC0AtCk2UGzWTMZMe/IWsbqrmpO1s9ByAim3i7B7cNuCMwkdR2/3c32sVgTlyhwUxxMIyLeyeP5kfHk6YZzeabirrWUW93tSXqrY56ZV6VYE40Relu13HtcFw1B2k1q+4e+FGytgPWFX1lbmkHdt0sOtf8UPejdvOgv65ZoucN3ZEtV4HBf0jXnSvoqiLX/f4Fl6v+L38ALs+oZqedtSEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;gitignore&quot;
+        title=&quot;gitignore&quot;
+        src=&quot;/static/9dccf99ececda7cda2d56565112351fc/12f09/gitignore.png&quot;
+        srcset=&quot;/static/9dccf99ececda7cda2d56565112351fc/12f09/gitignore.png 148w&quot;
+        sizes=&quot;(max-width: 148px) 100vw, 148px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JavaScript 비구조화 할당]]></title><description><![CDATA[비구조화 할당이란? 비구조화 할당은 ECMA 2015 의 새로운 문법이다. 배열과 객체에 적용할 수 있다. 문서 사용법 배열 Before: ES5 After: ES6 객체 Before: ES5 After: ES6 변수의 이름과 같은 객체 key…]]></description><link>https://hojin9622.github.io/JavaScript/javascript-비구조화-할당/</link><guid isPermaLink="false">https://hojin9622.github.io/JavaScript/javascript-비구조화-할당/</guid><pubDate>Sat, 09 May 2020 01:21:41 GMT</pubDate><content:encoded>&lt;h2 id=&quot;비구조화-할당이란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94-%ED%95%A0%EB%8B%B9%EC%9D%B4%EB%9E%80&quot; aria-label=&quot;비구조화 할당이란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;비구조화 할당이란?&lt;/h2&gt;
 &lt;p&gt;비구조화 할당은 ECMA 2015 의 새로운 문법이다.&lt;/p&gt;
 &lt;p&gt;배열과 객체에 적용할 수 있다.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment&quot;&gt;문서&lt;/a&gt;&lt;/p&gt;
@@ -62,19 +98,73 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;h2 id=&quot;how-to-use&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-to-use&quot; aria-label=&quot;how to use permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to use?&lt;/h2&gt;
 &lt;h3 id=&quot;github-저장소-생성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#github-%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%83%9D%EC%84%B1&quot; aria-label=&quot;github 저장소 생성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;github 저장소 생성&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;github에 로그인 후 우측 상단에 New repository를 클릭하여 저장소를 생성해준다.&lt;/p&gt;
-&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1NT1Rfytub32UKZqOdN8MV4brDVrdWrTR&quot;&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Repository name은 &amp;#x3C;계정이름&gt;.github.io 로 설정해준다.&lt;/p&gt;
-&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1FqcbGS4cpqQZsWB3YKhR_kr0ezOzQJjx&quot;&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Create Repository를 끝내면 완료!&lt;/p&gt;
-&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1fhxqctrI5Z3MaxinNcuifc0xLshQ7R0l&quot;&gt;
-&lt;/li&gt;
+&lt;li&gt;github에 로그인 후 우측 상단에 New repository를 클릭하여 저장소를 생성해준다.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 178px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 113.48314606741572%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAIAAACEf/j0AAAACXBIWXMAAA7DAAAOwwHHb6hkAAADg0lEQVQ4y5VSW2wUVRg+mvDio9LUSuku3dIL3aWtlRIhRo2SYuI1hpg0QcCoD/hAsOkuxbRGTFESg6alPOiDTz74ZKIJNkGKqFVp6W73Pmf21t3O7M7u3HfnsrNX/+1IlQol/vly5v/+M//9oI6evffF7h5HW+fe7uGTux37bF12W7fDtKP7e+7ps9i6Dr0ysu/U99be/T32PvvA0K7O3r+dO3v7t0CXfaDN1uN2ez698MnDza3PDb/06pGRg88cGhg62HC2tHe0Wdu3xlNPP/vE0JPNLa39jw8OH35hx05LR7cD7WzvfvO98fELX45+POOamnWdn3VOXTpzfrahTzV0Uzn94eej56ZPTV786tu5BV9y9NyMffAA+u6HKwemiJYPsrbJdJOT3j5GPXqG3u6kHnFScDa7aJM+djZjnchYJjItrlTT+1Gg099cRapu9E8E0THvO18n37icePGLWN8k8dpM/OXp+POfRY9cTrx+KX74YmzwI4xOeNFb3gff9m17N4COen4L84hhBcd4EI0Emk4TrWO4dYx86GTI6iL3TER3jGGLEyy4zUVanRgd9aNjAcADxwNoxH/VTSNRLixg6TrWrpPFedK4hos3osY1oggAOo8BRcCNiLEQM34htZ+xCpgnlESaQ4kkpWtavV5nmZTMMwUxl+cZgWVUmZdYGvS8kOWzlMxlFClXLRfrt4XlBXRl7ideKlRr9Uh8NYyjviCBI/EUlU6u0X8sLgdCGIwEGSVjCX+Q4EW5Vq+XqzVAjhMQy4uarkOkWq3+v6SRWZDyerFRDMNkVVXVdd0wDFXVJEkulUrrQf+Rzc7Qs6KqQNwe7583l0IEkVhNLi7dcq94TXvtHiWt9/zjXE4qmD+Vy+VqtQoJFUUB5b/Z/i0cL6JMloUigZhFbhIzRHVdNl2BI6KotCRJQG4u3lpadmNM0ukMJiNhglj2rIQIHAiG3J4Vnx++YZZlNxr59fclmLZkDgymxXIcBFI1TZbl1WQywzD5QgGMgijKch5GaJSMjcyrSRrBJgsFZYvB3LNnUUTBMAnhgXh9/jCBKYrmOD61tpbOQPFkJBpjWe6uoRuPRMwrut4oG1qFf9coGEI6DutKpaDLaDwuitJdnRurghenKGqlUtm4NvWNCVcqsLzyHSjDWeIFGRVUnRPkLMvD6Jkcu35y5nmbmvodgJrzivYXCuv0WEZkLTMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;repo1&quot;
+        title=&quot;repo1&quot;
+        src=&quot;/static/4aee460d4daa924182c1d3b994a35e55/43e0d/repo1.png&quot;
+        srcset=&quot;/static/4aee460d4daa924182c1d3b994a35e55/43e0d/repo1.png 178w&quot;
+        sizes=&quot;(max-width: 178px) 100vw, 178px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Repository name은 &amp;#x3C;계정이름&gt;.github.io 로 설정해준다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 681px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 18.666666666666668%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAp0lEQVQI122KXQvCMAxF9/9/nPqigrgvRJiuXZsmaTJdO6sg+ODhcu8hpCLm9QtiMNYA+AAhp5TXnHMq9d6cPp7yD9VmuxvtdB1uUWeOOtynEmODdUEeyzOtNOtzWdZ/VPvD0Vg33I0PpHFEqME14Gpnz4xdpJ6wZWyVLxE7jVdRlFmjsAhXIspUTJjLZRTqylOJUF+aQlME/Rl9DdOJsUdyyAjoA8ILs4/kR/JtslgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;repo2&quot;
+        title=&quot;repo2&quot;
+        src=&quot;/static/87261eb3d1b8140a15146e80fc78ed51/8ce52/repo2.png&quot;
+        srcset=&quot;/static/87261eb3d1b8140a15146e80fc78ed51/5a46d/repo2.png 300w,
+/static/87261eb3d1b8140a15146e80fc78ed51/0a47e/repo2.png 600w,
+/static/87261eb3d1b8140a15146e80fc78ed51/8ce52/repo2.png 681w&quot;
+        sizes=&quot;(max-width: 681px) 100vw, 681px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Create Repository를 끝내면 완료!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 161px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 30.434782608695656%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABNElEQVQY02P4////r7+/T76/fOTduSPvzh9/d+HYuwtg8jyEcRzGhbEvHnp79tbnB0CNDEB859ND4+OhuscDDY4Hqh7xVD3sBSQ1jvhoHPEGMtSOALlemkd9gQwg0jrqp3zEM/VSHUzzh4c6e3yDzxRnX2pLPl9TeLm17NrEsFO5UeeqCy43Z1ysz7hUV3G1r+xqX8qFhugzJaYHAuNPVkI133p3X2Oju9Oe+IgjJcnH68rPdOSdbIs4lBNwqKjp4oS8EzXpJ6ozTtRnnGiIP1qVc7JRf7NH1IEiqOZHH586rI8yWe1nvNrXYJW37kovvVWeRqv9jFb5AEnDVT76UOQNZFuvC9Vf6V18qBWq+d///99+ff/66/u3Xz++w9A3EBeKvoMQVPDLr29ffn399ecXUCMArx7xjg8a3DcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;repo3&quot;
+        title=&quot;repo3&quot;
+        src=&quot;/static/de71ebc30c1c6707a091dc39b7eff2b0/a5ccf/repo3.png&quot;
+        srcset=&quot;/static/de71ebc30c1c6707a091dc39b7eff2b0/a5ccf/repo3.png 161w&quot;
+        sizes=&quot;(max-width: 161px) 100vw, 161px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&quot;hexo-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hexo-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;hexo 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hexo 설치&lt;/h3&gt;
 &lt;p&gt;Hexo의 설치에는 두가지 요구사항이 있다.&lt;/p&gt;
 &lt;ul&gt;
