@@ -1,7 +1,7 @@
 ---
 title: Hexo로 github.io 블로그 생성
 date: 2020-05-01 17:40:56
-category: javascript
+category: JavaScript
 draft: false
 ---
 
