@@ -41,7 +41,7 @@ $ virtualenv venv
 
 폴더 이름은 입맛에 맞게 변경할 수 있지만 관습적으로 venv, env 라고 짓는다.
 
-<img src='http://drive.google.com/uc?export=view&id=10LZXPmxZD-SXr5K7yyjcgrfCyllumOfL' alt="folder list"/>
+![](/images/python-pip&virtualenv를-이용한-가상환경-셋팅/list.png)
 
 ### 가상환경 사용
 
@@ -79,4 +79,4 @@ requirements.txt 에 있는 패키지를 다운받으려면 위 명령어를 실
 
 github에 업로드 할때는 .gitignore 에 env 폴더를 넣어주도록 하자.
 
-<img src='http://drive.google.com/uc?export=view&id=1nnCiQa3mqOtNB_T5jIINfdnoToqqoF0l' alt="gitignore"/>
+![](/images/python-pip&virtualenv를-이용한-가상환경-셋팅/gitignore.png)

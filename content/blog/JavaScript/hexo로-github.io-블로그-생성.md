@@ -21,15 +21,15 @@ Hexo를 이용하여 github.io 페이지에 쉽게 블로그를 만드는 방법
 
 1. github에 로그인 후 우측 상단에 New repository를 클릭하여 저장소를 생성해준다.
 
-   <img src="http://drive.google.com/uc?export=view&id=1NT1Rfytub32UKZqOdN8MV4brDVrdWrTR" />
+![](./images/hexo로-github.io-블로그-생성/repo1.png)
 
 2. Repository name은 <계정이름>.github.io 로 설정해준다.
 
-   <img src="http://drive.google.com/uc?export=view&id=1FqcbGS4cpqQZsWB3YKhR_kr0ezOzQJjx" />
+![](./images/hexo로-github.io-블로그-생성/repo2.png)
 
 3. Create Repository를 끝내면 완료!
 
-   <img src="http://drive.google.com/uc?export=view&id=1fhxqctrI5Z3MaxinNcuifc0xLshQ7R0l" />
+![](./images/hexo로-github.io-블로그-생성/repo3.png)
 
 ### Hexo 설치
 
