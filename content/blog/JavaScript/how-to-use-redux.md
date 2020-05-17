@@ -80,7 +80,7 @@ const countStore = createStore(countModifier)
 countStore.dispatch({ type: 'HELLO' })
 ```
 
-reducer에 action을 보내는 방법이다.
+dispatch는 reducer에 action을 보내는 방법이다.
 
 dispatch에는 객체만이 들어갈 수 있고 반드시 type도 있어야한다.
 
