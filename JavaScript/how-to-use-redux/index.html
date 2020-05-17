@@ -89,7 +89,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token keyword">const</span> countStore <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span>countModifier<span class="token punctuation">)</span>
 
 countStore<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span> type<span class="token operator">:</span> <span class="token string">'HELLO'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
-<p>reducer에 action을 보내는 방법이다.</p>
+<p>dispatch는 reducer에 action을 보내는 방법이다.</p>
 <p>dispatch에는 객체만이 들어갈 수 있고 반드시 type도 있어야한다.</p>
 <p>type의 이름을 바꿀 수는 없다.</p>
 <p>dispatch를 사용하면 redux가 countModifier를 호출할 것이고 console.log(action)이 호출되는 것이다.</p>
