@@ -178,4 +178,4 @@ store.getCurrent() + 1 같은 방법도 사용하면 안되고 store의 state를
 
 `return state.push(action.text)` 와 같은 방법도 사용하면 안된다.
 
-filter 같은 함수를 사용하여 새로운 배열을 만들어 return 해야 한다.
+filter, find 같은 함수를 사용하여 새로운 배열을 만들어 return 해야 한다.
