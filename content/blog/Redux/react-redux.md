@@ -1,13 +1,13 @@
 ---
-title: React-Redux
+title: react-redux
 date: 2020-05-19 22:05:97
-category: React
+category: Redux
 draft: false
 ---
 
 ## 설치
 
-[react-redux 문서](https://react-redux.js.org/introduction/quick-start)
+[react-redux 문서 바로가기](https://react-redux.js.org/introduction/quick-start)
 
 ```sh
 yarn add react-redux
