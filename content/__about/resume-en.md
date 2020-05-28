@@ -1,6 +1,6 @@
 ---
 title: 'about'
-date: 2019-1-27 16:21:13
+date: 2020-5-29 00:48:01
 lang: 'en'
 ---
 
@@ -8,6 +8,10 @@ lang: 'en'
 
 <div align="center">
 
-_Thank you for reading my resume. If you want to contact me, Please send me an email._
+안녕하세요.
+
+_email : kiss0104040@gmail.com_
+
+_github : https://github.com/HoJin9622_
 
 </div>
