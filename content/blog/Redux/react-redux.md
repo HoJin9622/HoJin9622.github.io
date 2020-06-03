@@ -1,5 +1,5 @@
 ---
-title: react-redux
+title: React-Redux
 date: 2020-05-19 22:05:97
 category: Redux
 draft: false
