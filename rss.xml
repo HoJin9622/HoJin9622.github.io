@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HoJin9622's Devlog]]></title><description><![CDATA[Devlog]]></description><link>https://hojin9622.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 11 Jun 2020 14:45:59 GMT</lastBuildDate><item><title><![CDATA[GraphQL 기본]]></title><description><![CDATA[graphql GraphQL로 해결할 수 있는 두가지 문제 Over-fetching : 요청한 영역의 정보보다, 많은 정보를 서버에서 받는 것 Under-fetching : SNS 앱을 예로 들면 notification, users, feed…]]></description><link>https://hojin9622.github.io/graphql/graphql-basic/</link><guid isPermaLink="false">https://hojin9622.github.io/graphql/graphql-basic/</guid><pubDate>Thu, 11 Jun 2020 23:07:09 GMT</pubDate><content:encoded>&lt;h2 id=&quot;graphql&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#graphql&quot; aria-label=&quot;graphql permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;graphql&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HoJin9622's Devlog]]></title><description><![CDATA[Devlog]]></description><link>https://hojin9622.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 12 Jun 2020 03:35:26 GMT</lastBuildDate><item><title><![CDATA[GraphQL 기본2]]></title><description><![CDATA[배열 index.js 파일의 내용은 이전 글과 동일하다. resolver.js 파일 people은 배열로 여러사람의 정보를 객체로 저장 중이다. schema.graphql 파일 Person을 정의해주고 Query에서 Person…]]></description><link>https://hojin9622.github.io/graphql/graphql-basic2/</link><guid isPermaLink="false">https://hojin9622.github.io/graphql/graphql-basic2/</guid><pubDate>Fri, 12 Jun 2020 12:06:18 GMT</pubDate><content:encoded>&lt;h2 id=&quot;배열&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%B0%EC%97%B4&quot; aria-label=&quot;배열 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;배열&lt;/h2&gt;
+&lt;p&gt;index.js 파일의 내용은 이전 글과 동일하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; people &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./db&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; resolvers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  Query&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function-variable function&quot;&gt;people&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; people&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; resolvers&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;resolver.js 파일&lt;/p&gt;
+&lt;p&gt;people은 배열로 여러사람의 정보를 객체로 저장 중이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type Person {
+  id: Int!
+  name: String!
+  age: Int!
+  gender: String!
+}
+
+type Query {
+  people: [Person]!
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;schema.graphql 파일&lt;/p&gt;
+&lt;p&gt;Person을 정의해주고 Query에서 Person은 배열이므로 []로 감싸준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;query {
+  people {
+    id
+    name
+    age
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;playground의 query문&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+  &amp;quot;data&amp;quot;: {
+    &amp;quot;people&amp;quot;: [
+      {
+        &amp;quot;id&amp;quot;: 0,
+        &amp;quot;name&amp;quot;: &amp;quot;hojin&amp;quot;,
+        &amp;quot;age&amp;quot;: 24
+      },
+      {
+        &amp;quot;id&amp;quot;: 1,
+        &amp;quot;name&amp;quot;: &amp;quot;Daal&amp;quot;,
+        &amp;quot;age&amp;quot;: 18
+      },
+      {
+        &amp;quot;id&amp;quot;: 2,
+        &amp;quot;name&amp;quot;: &amp;quot;JD&amp;quot;,
+        &amp;quot;age&amp;quot;: 20
+      },
+      {
+        &amp;quot;id&amp;quot;: 3,
+        &amp;quot;name&amp;quot;: &amp;quot;flynn&amp;quot;,
+        &amp;quot;age&amp;quot;: 19
+      }
+    ]
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;결과&lt;/p&gt;
+&lt;p&gt;people을 배열로 받은걸 볼 수 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[GraphQL 기본]]></title><description><![CDATA[graphql GraphQL로 해결할 수 있는 두가지 문제 Over-fetching : 요청한 영역의 정보보다, 많은 정보를 서버에서 받는 것 Under-fetching : SNS 앱을 예로 들면 notification, users, feed…]]></description><link>https://hojin9622.github.io/graphql/graphql-basic/</link><guid isPermaLink="false">https://hojin9622.github.io/graphql/graphql-basic/</guid><pubDate>Thu, 11 Jun 2020 23:07:09 GMT</pubDate><content:encoded>&lt;h2 id=&quot;graphql&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#graphql&quot; aria-label=&quot;graphql permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;graphql&lt;/h2&gt;
 &lt;p&gt;GraphQL로 해결할 수 있는 두가지 문제&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Over-fetching : 요청한 영역의 정보보다, 많은 정보를 서버에서 받는 것&lt;/li&gt;
