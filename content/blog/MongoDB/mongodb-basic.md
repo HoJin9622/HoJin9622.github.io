@@ -1,5 +1,5 @@
 ---
-title: MongoDB 기본
+title: MongoDB Create/Read/Delete
 date: 2020-07-10 00:07:57
 category: MongoDB
 draft: false
