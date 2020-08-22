@@ -1,5 +1,5 @@
 ---
-title: Python pip&virtualenv를 이용한 가상환경 셋팅
+title: '[Python] pip&virtualenv를 이용한 가상환경 셋팅'
 date: 2020-05-14 19:04:38
 category: Python
 draft: false

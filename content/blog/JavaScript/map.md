@@ -1,8 +1,8 @@
 ---
-title: 자바스크립트 map 함수
+title: '[JavaScript]map 함수'
 date: 2020-06-03 19:06:47
 category: JavaScript
-draft: true
+draft: false
 ---
 
 ## reverse().map()

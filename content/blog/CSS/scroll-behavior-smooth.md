@@ -1,5 +1,5 @@
 ---
-title: CSS scroll behavior smooth
+title: '[CSS] scroll behavior smooth'
 date: 2020-06-07 23:06:44
 category: CSS
 draft: false

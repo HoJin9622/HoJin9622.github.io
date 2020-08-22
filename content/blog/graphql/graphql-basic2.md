@@ -1,5 +1,5 @@
 ---
-title: GraphQL 기본2
+title: '[GraphQL]GraphQL 기본2'
 date: 2020-06-12 12:06:18
 category: GraphQL
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: JavaScript 비구조화 할당
+title: '[JavaScript] 비구조화 할당'
 date: 2020-05-09 01:21:41
 category: JavaScript
 draft: false

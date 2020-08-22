@@ -1,7 +1,7 @@
 ---
-title: Redux 기본 사용법
+title: '[Redux] 기본 사용법'
 date: 2020-05-18 01:05:37
-category: Redux
+category: JavaScript
 draft: false
 ---
 

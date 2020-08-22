@@ -1,7 +1,7 @@
 ---
-title: Redux Toolkit
+title: '[Redux]Redux Toolkit'
 date: 2020-05-22 02:27:51
-category: Redux
+category: JavaScript
 draft: false
 ---
 

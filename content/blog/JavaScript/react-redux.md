@@ -1,7 +1,7 @@
 ---
-title: React-Redux
+title: '[Redux]React-Redux'
 date: 2020-05-19 22:05:97
-category: Redux
+category: JavaScript
 draft: false
 ---
 
