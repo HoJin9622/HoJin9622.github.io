@@ -1,7 +1,7 @@
 ---
 title: '[RN]React-Native Component'
 date: 2020-06-03 20:00:35
-category: React Native
+category: JavaScript
 draft: false
 ---
 
