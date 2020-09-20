@@ -1,5 +1,5 @@
 ---
-title: '[Django] 기본'
+title: '[Django] 기본 파일들의 역할'
 date: 2020-09-20 00:09:39
 category: Python
 draft: false
