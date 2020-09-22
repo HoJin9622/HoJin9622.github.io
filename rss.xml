@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HoJin9622's Devlog]]></title><description><![CDATA[Devlog]]></description><link>https://hojin9622.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 20 Sep 2020 13:58:20 GMT</lastBuildDate><item><title><![CDATA[[Django] Model, Serializer, View]]></title><description><![CDATA[Model 장고의 model에 하나의 클래스를 정의한다. 하나의 모델 클래스는 데이터베이스에서 하나의 테이블에 해당된다. 필드타입 CharField: 길이가 제한된 문자열 형식, max_length 옵션을 지정해야한다. TextField…]]></description><link>https://hojin9622.github.io/python/model-serializer-view/</link><guid isPermaLink="false">https://hojin9622.github.io/python/model-serializer-view/</guid><pubDate>Sun, 20 Sep 2020 22:10:22 GMT</pubDate><content:encoded>&lt;h2 id=&quot;model&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#model&quot; aria-label=&quot;model permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Model&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HoJin9622's Devlog]]></title><description><![CDATA[Devlog]]></description><link>https://hojin9622.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Sep 2020 12:54:08 GMT</lastBuildDate><item><title><![CDATA[[RN] React-Native에 폰트 적용]]></title><description><![CDATA[폰트 다운로드 원하는 폰트를 다운로드 받고 파일명을 postscript name으로 변경해준다. ios 에서는 font-family를 지정할 때 postscript name으로 지정해야해서 파일명을 postscript name…]]></description><link>https://hojin9622.github.io/javascript/react-native-font/</link><guid isPermaLink="false">https://hojin9622.github.io/javascript/react-native-font/</guid><pubDate>Tue, 22 Sep 2020 21:10:25 GMT</pubDate><content:encoded>&lt;h2 id=&quot;폰트-다운로드&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8F%B0%ED%8A%B8-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C&quot; aria-label=&quot;폰트 다운로드 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;폰트 다운로드&lt;/h2&gt;
+&lt;p&gt;원하는 폰트를 다운로드 받고 파일명을 postscript name으로 변경해준다.&lt;/p&gt;
+&lt;p&gt;ios 에서는 font-family를 지정할 때 postscript name으로 지정해야해서 파일명을 postscript name으로 변경해주는게 편하다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB2klEQVQoz52S25KaQBCGeZKIw7AwHEVFxBMeQOTkuslGa8tcbW6y7/8Af5rR1aQqqUr24quZ6ab//mcaZbNfI4znWKy3eHp+QdUckOUlsm2BrNyjOZ7R7B+xK2oUVYPPX75ivdkizStstldon1JNvKqgTKYLWI6HZLnC6+t3HI8nEtijrhs0zR5F0YrnSNMM5/M3/Hh7k+c2XlYVirJEnu/o+xqTJIMy3dRwhnO4wQiz+QL9wRDDcIQwjCAsG1w3oD8YcFwP43giV78XwHZcmMKisw/X8zGKIvj9EZTq6QWT5Q6WG+B4OsmuFXVrHfi9HrpMA9M4FQvMFwssVytMZzNqGlKOkaCLaDyWJtqGSn04Id09Qjg+BWIMyOFgGCLoD2AYJjQS0ziXLj2/J3E9D5Zty5xhCilqOw7hQcnLA7wgAn8Q6Kgq1C67waSYLmn3rdt3GPFrvF0/dVQoy7Si9xuToCWd8KvAHX5F/wP8t32XmzTlVYE4yWHaPnVlfyn8BzRybLpQoqREMEmhC+92jY8JklvDgRKvGxLMwFtBTbsn+f9wqWH0bMoyO0AME+iWf7H9UYckzHRBU26eIQYJGNm9TVi9T1ntXqb6nuvc/gKKtXHGr2joaAI/AYSRdH3C9EjOAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;font1&quot;
+        title=&quot;font1&quot;
+        src=&quot;/static/2376ca6e03674221f3d9c7db986b107b/c1b63/font1.png&quot;
+        srcset=&quot;/static/2376ca6e03674221f3d9c7db986b107b/5a46d/font1.png 300w,
+/static/2376ca6e03674221f3d9c7db986b107b/0a47e/font1.png 600w,
+/static/2376ca6e03674221f3d9c7db986b107b/c1b63/font1.png 1200w,
+/static/2376ca6e03674221f3d9c7db986b107b/5f652/font1.png 1302w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;ios에-적용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ios%EC%97%90-%EC%A0%81%EC%9A%A9&quot; aria-label=&quot;ios에 적용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ios에 적용&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;프로젝트 ios 폴더 하단에 Fonts 폴더를 생성하고, Fonts 폴더 내부에 다운로드한 폰트파일을 붙여넣는다.&lt;/li&gt;
+&lt;li&gt;xcode &gt; Open another project… &gt; 프로젝트 폴더 &gt; ios &gt; 프로젝트명.xcworkspace 를 연다.&lt;/li&gt;
+&lt;li&gt;그 후 프로젝트 폴더를 오른쪽 클릭 후 &lt;code class=&quot;language-text&quot;&gt;Add Files to 프로젝트명...&lt;/code&gt;을 클릭하면 아래와 같은 화면이 나온다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAACKElEQVQoz3VS147TQBT1b5Dem8u4xIlL3O000ogJsMsDb4gfQEJIIP78cGccFsHCw9HM3BndU+5IaVZg//KA0+mC25t3iLIdbD+HuUyQnB7x9sMnXMsbSgK/3273WCydp/evrqXAtXwt+khhFGMVhLAsixpFsB++QTt8wXDzGfL5O4zLVxwuNxTFGoY5x3A0Qa8/xHg8xWQqYzyZPWFENSnLCzw8vkeWppB1C2ayg+c4QoXnelgsltiQKt8PMBiO8aLWQL3RQq3efAZel+IkIflnxHEC017C9kKY1lyoMWg1LRtJmsPzV3CIQGOGUMOVjiZToYrvB6OxIJRcz8d6uwVXGoQhRARhDD+IsHBcUurCnNvQiUA3LUGg/yKjukFnZliCSNV0SJw1z3MEyQarosR+v0O+3iJOM5Ett27elfKGmm4I6NSEu2CGCZWaKRqDojJIvMhV2l6EqDghjSOsNztqfBATTcmuomrodHro9QbodvsVev3q3KvO/J4PSZIVDTPCVFaQp2SVsgrIbkS2oygRZ5dcDCmfBoXebLb/iUa9JbKVZJLJvXPJPNx2u/sHWq2OYOfg+/+BNxUNZ4qKCpoo1mn8gpHU/I1nyhrVuya/r9Xob04g6RSqZS9E4Ow+qRnZ57lpTBc1vqrkQCZiWSbyOxQSwWhAsmZgyhwohkP/kP5fWZbIsgyH41GAMVZB1+9gv2t3qKpK/9JFeT3DTc+Qjz8wSz/iJ+Ptfdkuc1o1AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;font2&quot;
+        title=&quot;font2&quot;
+        src=&quot;/static/be98d0116a2bccb58228bad362c77b73/c1b63/font2.png&quot;
+        srcset=&quot;/static/be98d0116a2bccb58228bad362c77b73/5a46d/font2.png 300w,
+/static/be98d0116a2bccb58228bad362c77b73/0a47e/font2.png 600w,
+/static/be98d0116a2bccb58228bad362c77b73/c1b63/font2.png 1200w,
+/static/be98d0116a2bccb58228bad362c77b73/d3d45/font2.png 1614w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;1번단계에서 생성한 Fonts 폴더를 선택하고 Add folders: Create folder references를 선택하고 Add 한다.&lt;/li&gt;
+&lt;li&gt;그 후 최상의 프로젝트명 &gt; PROJECT에 자신의 프로젝트 선택 &gt; TARGETS에 제일 위 선택 &gt; Info를 열고 아래와 같이 추가한 font를 넣는다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1096px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.33333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAABsElEQVQ4y4VU2ZKCQAzkO1yRS1ER5BI5BORQa///h7LT0ZnCo9aH1EBIOp10Bs1ZramoaqpODaVZznYsStoFIemGRZazoqW7odV6y+/bXUCliA+jhH0L0ybDcviEaT+6QUEYM9BsbtB8YRJ8SJaBKLrxfPZFSUrD5UbNuSd/H3FBxMlYDQBhnFKWl6raNEACrjceF0PxbrhQnGbk+Xuyly77FeCPbtJe0M/yQgG8GpLW2x0nYhTDeKW8rJgIioGlahlBAETAneE7S2YoANEy2uwF4Lkb7mc/UHLI+NvXlp9neAcEw/F6o1NzpqI8Ud12PN93hkWlnJ8Zegqw60cGwyh0w1bslMoAxOqY9vLjDGXLUhS0WtUts3aFWFifiSgGz+X4aBnVXg1MkCRXDAyzY8F5IIPdlLlvDKf0ZZBUWQKCYSTmPpsv2AfmTy2jEmY4BZyeU4aIhcJxeuBv8E1BGTCME756lvN9hr4Q5Xr7pVHcllbcFqjcCHMfi6+u3v+iuCqBVRY3BWBgys9drwpqUAdtYA/BBKDYfGl4x88BCYj1/IBZVXUjdrGlUnQGQaXSf9X/nBcE9lu9AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;font3&quot;
+        title=&quot;font3&quot;
+        src=&quot;/static/b3aba0524d1ed711a749d57f2301a6df/8ae78/font3.png&quot;
+        srcset=&quot;/static/b3aba0524d1ed711a749d57f2301a6df/5a46d/font3.png 300w,
+/static/b3aba0524d1ed711a749d57f2301a6df/0a47e/font3.png 600w,
+/static/b3aba0524d1ed711a749d57f2301a6df/8ae78/font3.png 1096w&quot;
+        sizes=&quot;(max-width: 1096px) 100vw, 1096px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;android&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#android&quot; aria-label=&quot;android permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;android&lt;/h2&gt;
+&lt;p&gt;안드로이드는 &lt;code class=&quot;language-text&quot;&gt;android/app/src/main/assets/fonts&lt;/code&gt; 폴더를 생성 한 후 폴더 내부에 다운로드한 폰트 파일을 붙여넣는다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[Django] Model, Serializer, View]]></title><description><![CDATA[Model 장고의 model에 하나의 클래스를 정의한다. 하나의 모델 클래스는 데이터베이스에서 하나의 테이블에 해당된다. 필드타입 CharField: 길이가 제한된 문자열 형식, max_length 옵션을 지정해야한다. TextField…]]></description><link>https://hojin9622.github.io/python/model-serializer-view/</link><guid isPermaLink="false">https://hojin9622.github.io/python/model-serializer-view/</guid><pubDate>Sun, 20 Sep 2020 22:10:22 GMT</pubDate><content:encoded>&lt;h2 id=&quot;model&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#model&quot; aria-label=&quot;model permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Model&lt;/h2&gt;
 &lt;p&gt;장고의 model에 하나의 클래스를 정의한다.&lt;/p&gt;
 &lt;p&gt;하나의 모델 클래스는 데이터베이스에서 하나의 테이블에 해당된다.&lt;/p&gt;
 &lt;ul&gt;
