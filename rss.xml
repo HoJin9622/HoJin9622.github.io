@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HoJin9622's Devlog]]></title><description><![CDATA[Devlog]]></description><link>https://hojin9622.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Sep 2020 12:54:08 GMT</lastBuildDate><item><title><![CDATA[[RN] React-Native에 폰트 적용]]></title><description><![CDATA[폰트 다운로드 원하는 폰트를 다운로드 받고 파일명을 postscript name으로 변경해준다. ios 에서는 font-family를 지정할 때 postscript name으로 지정해야해서 파일명을 postscript name…]]></description><link>https://hojin9622.github.io/javascript/react-native-font/</link><guid isPermaLink="false">https://hojin9622.github.io/javascript/react-native-font/</guid><pubDate>Tue, 22 Sep 2020 21:10:25 GMT</pubDate><content:encoded>&lt;h2 id=&quot;폰트-다운로드&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8F%B0%ED%8A%B8-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C&quot; aria-label=&quot;폰트 다운로드 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;폰트 다운로드&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HoJin9622's Devlog]]></title><description><![CDATA[Devlog]]></description><link>https://hojin9622.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 02 Oct 2020 13:51:16 GMT</lastBuildDate><item><title><![CDATA[[Next.js]Next.js가 필요한 이유]]></title><description><![CDATA[Next.js가 필요한 이유  으로 프로젝트를 생성하게되면 웹페이지의 소스보기를 클릭하면 페이지의 소스가 제대로 표현되지 않는다.  크롬 개발자 도구로 id=‘root’인 div…]]></description><link>https://hojin9622.github.io/javascript/nextjs-tutorial-1/</link><guid isPermaLink="false">https://hojin9622.github.io/javascript/nextjs-tutorial-1/</guid><pubDate>Fri, 02 Oct 2020 22:10:15 GMT</pubDate><content:encoded>&lt;h1 id=&quot;nextjs가-필요한-이유&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nextjs%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C-%EC%9D%B4%EC%9C%A0&quot; aria-label=&quot;nextjs가 필요한 이유 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Next.js가 필요한 이유&lt;/h1&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npx create-react-app&lt;/code&gt; 으로 프로젝트를 생성하게되면 웹페이지의 소스보기를 클릭하면 페이지의 소스가 제대로 표현되지 않는다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 59.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAABoElEQVQoz52Ti27VMAyGz2uzTWPdAKE9JEJsI23TpLk19/bHDaKMnYEmLH1K6qR/bMc5dTd36Lo7XL+/xYePn/D5/h43XYeLy6s/ufg374jLq2uccsgowiE7jxKBEoCa8d92MsZCPzA8fmH4/uRgJwneWwgR4JcM7wsCsdYV6/oM+q61nnGy1sJpiWlS4NJDKgetDPohQEiKvKZGKgmlloO6VmzbdkYTVCTIxgGDmNDzAV8fBYZJQy8axpsDn/zBfsBuv4SOlHfB/cdRcXDNIYxALzn5fopor2G9bSIv7bnQb0FHEQYNJhn6uQc3HKMe2shmRvMRk5ma+Mv0Xo1QSQUzaMzzDKMNYogIKSCm2EgpNfa6vSZwFqFWVCeuIKYZTdwZOOcQIwmHQDcckHw6i+hvtBraZDG0NCk9yzEvc6udCVTfoLAkhw3rW/vQQLkZT5zh28BoHMFEj54YZN8uaKI2ipH6rhC5Ug9WlLxSKbZGyXRcIT+tnySXiNZTegXGVFhLG2mePb2gmCjlCmc3LG5DDiREazXlw78T/Up7S+MHXO6KUzDMlKEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;cra source view&quot;
+        title=&quot;cra source view&quot;
+        src=&quot;/static/4e9cd3d55425bc4a0ce5c826c8f0e518/c1b63/cra_source_view.png&quot;
+        srcset=&quot;/static/4e9cd3d55425bc4a0ce5c826c8f0e518/5a46d/cra_source_view.png 300w,
+/static/4e9cd3d55425bc4a0ce5c826c8f0e518/0a47e/cra_source_view.png 600w,
+/static/4e9cd3d55425bc4a0ce5c826c8f0e518/c1b63/cra_source_view.png 1200w,
+/static/4e9cd3d55425bc4a0ce5c826c8f0e518/d61c2/cra_source_view.png 1800w,
+/static/4e9cd3d55425bc4a0ce5c826c8f0e518/7d62e/cra_source_view.png 2368w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;크롬 개발자 도구로 id=‘root’인 div를 열어보면 페이지에 대한 내용이 담겨있지만 페이지 소스 보기로 볼 경우 위 이미지처럼 나타나게 된다.&lt;/p&gt;
+&lt;p&gt;대부분 사이트의 검색엔진들은 이 페이지 소스보기로 나오는, 자바스크립트가 실행되기 전 소스를 검색하게 된다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npx create-next-app&lt;/code&gt; 으로 프로젝트를 생성 후 웹페이지의 소스보기를 클릭하면 페이지의 소스가 제대로 표현된다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 26.666666666666668%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAABOElEQVQY0z2P207CUBBF+WONqWIriHdejA8mfpVRLlEEe5W2lPa0xVKwQAvLE0ycZGVm9kx2smt3N22uLtq0tHMum2200xbasYp6oqIoGsqRukdVzqXeRKufUZfz4UGTo4M6jUaL6+t77m8feHp8orbOMiK3IPQqfGtHaC9xrQ1xsCb2ij2BuyEa5/jOknC8Rvg7hPsjtRWb7wp2/FdNeD7m54LRqMDWc0nMcDjHGGY4xgRHF1KL5M8XjulijCS6i6nLXQ8IHIGI5yRiQZYuqEVuyHs3oy957yUM+glvnRRzIPgahdgfIYPujN7zjP7LjFfZe52IiRHhDAIsfUbk5cRTaZhIw3maMrYrLGMrjyWOVWKbJYGMloc5eZTJuWDiV0wnFWGwZRpUpGLDPFlRFmt25Za/3Ft+AS4xWxYNc7sdAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;cna source view&quot;
+        title=&quot;cna source view&quot;
+        src=&quot;/static/ec147930eac9b30ac50603a220b504c5/c1b63/cna_source_view.png&quot;
+        srcset=&quot;/static/ec147930eac9b30ac50603a220b504c5/5a46d/cna_source_view.png 300w,
+/static/ec147930eac9b30ac50603a220b504c5/0a47e/cna_source_view.png 600w,
+/static/ec147930eac9b30ac50603a220b504c5/c1b63/cna_source_view.png 1200w,
+/static/ec147930eac9b30ac50603a220b504c5/d61c2/cna_source_view.png 1800w,
+/static/ec147930eac9b30ac50603a220b504c5/97a96/cna_source_view.png 2400w,
+/static/ec147930eac9b30ac50603a220b504c5/b8765/cna_source_view.png 2868w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Welcome to Next.js! 등 모든 소스가 한줄로 압축되어 나타나게 된다.&lt;/p&gt;
+&lt;p&gt;이러한 이유때문에 검색엔진 최적화가 가능하다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[RN] React-Native에 폰트 적용]]></title><description><![CDATA[폰트 다운로드 원하는 폰트를 다운로드 받고 파일명을 postscript name으로 변경해준다. ios 에서는 font-family를 지정할 때 postscript name으로 지정해야해서 파일명을 postscript name…]]></description><link>https://hojin9622.github.io/javascript/react-native-font/</link><guid isPermaLink="false">https://hojin9622.github.io/javascript/react-native-font/</guid><pubDate>Tue, 22 Sep 2020 21:10:25 GMT</pubDate><content:encoded>&lt;h2 id=&quot;폰트-다운로드&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8F%B0%ED%8A%B8-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C&quot; aria-label=&quot;폰트 다운로드 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;폰트 다운로드&lt;/h2&gt;
 &lt;p&gt;원하는 폰트를 다운로드 받고 파일명을 postscript name으로 변경해준다.&lt;/p&gt;
 &lt;p&gt;ios 에서는 font-family를 지정할 때 postscript name으로 지정해야해서 파일명을 postscript name으로 변경해주는게 편하다.&lt;/p&gt;
 &lt;p&gt;&lt;span
