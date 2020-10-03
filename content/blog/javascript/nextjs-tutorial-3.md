@@ -57,6 +57,27 @@ export default Page
 
 그 후 /articles 페이지로 가보면 작성한 화면을 볼 수 있다.
 
+# \_app.js
+
+모든 페이지들을 감싸는 영역
+
+```js
+import '../styles/globals.css'
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <p>텍스트 출력</p>
+      <Component {...pageProps} />
+    </>
+  )
+}
+
+export default MyApp
+```
+
+위와 같이 작성하게되면 모든 페이지에서 "텍스트 출력"이라는 글을 확인할 수 있다.
+
 # Link
 
 ```js
@@ -83,23 +104,40 @@ export default Page
 
 next/link에서 Link를 import하여 a 태그를 Link 태그로 감싸주고 href를 설정해주면 SPA처럼 동작하게 된다.
 
-# \_app.js
-
-모든 페이지들을 감싸는 영역
+# Route
 
 ```js
-import '../styles/globals.css'
+import { Button } from 'antd'
+import axios from 'axios'
+import Router from 'next/router'
 
-function MyApp({ Component, pageProps }) {
+function GetDouble(props) {
   return (
-    <>
-      <p>텍스트 출력</p>
-      <Component {...pageProps} />
-    </>
+    <div className="w-full h-screen flex flex-col justify-center items-center">
+      <div className="text-6xl">{props.value}</div>
+
+      <div className="mt-4">
+        <Button onClick={() => Router.back()}>돌아가기</Button>
+      </div>
+    </div>
   )
 }
 
-export default MyApp
+GetDouble.getInitialProps = async function(context) {
+  const value = context.query.value
+  const response = await axios.get(
+    'http://localhost:1234' + '/api/double?value=' + value
+  )
+  return {
+    value: response.data.value,
+  }
+}
+
+export default GetDouble
 ```
 
-위와 같이 작성하게되면 모든 페이지에서 "텍스트 출력"이라는 글을 확인할 수 있다.
+next/js에서 Router를 import 한다.
+
+그 후 `Router.back()` 함수를 실행하면 뒤로가게 된다.
+
+Router를 사용하여 스크립트 상에서 페이지 이동이 가능하게 된다.
