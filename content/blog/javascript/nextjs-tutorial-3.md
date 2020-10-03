@@ -82,3 +82,24 @@ export default Page
 ```
 
 next/link에서 Link를 import하여 a 태그를 Link 태그로 감싸주고 href를 설정해주면 SPA처럼 동작하게 된다.
+
+# \_app.js
+
+모든 페이지들을 감싸는 영역
+
+```js
+import '../styles/globals.css'
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <p>텍스트 출력</p>
+      <Component {...pageProps} />
+    </>
+  )
+}
+
+export default MyApp
+```
+
+위와 같이 작성하게되면 모든 페이지에서 "텍스트 출력"이라는 글을 확인할 수 있다.
