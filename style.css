@@ -1,26 +1,42 @@
 body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgba(38, 38, 38);
+  font-size: 14px;
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
+  padding-bottom: 144px;
+  background-color: rgba(250, 250, 250);
 }
 
 header {
   text-align: right;
   padding: 24px 0;
+  margin-bottom: 72px;
 }
 
 header .fa-moon {
+  color: rgba(38, 38, 38);
   margin-right: 18px;
   font-size: 24px;
+  cursor: pointer;
 }
 
-header .fa-github {
+header a:visited {
+  color: rgba(38, 38, 38);
+}
+
+header a .fa-github {
+  color: rgba(38, 38, 38);
   font-size: 24px;
+  cursor: pointer;
 }
 
 .profile__image {
   width: 200px;
   height: 280px;
+  margin-bottom: 18px;
 }
 
 .profile__image img {
@@ -30,10 +46,146 @@ header .fa-github {
   border-radius: 20px;
 }
 
-.grid__item {
-  width: 280px;
-  height: 400px;
+.introduction {
+  margin-bottom: 72px;
+}
+
+.introduction h1 {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.introduction span {
+  font-size: 32px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about h2 {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.skill {
+  margin-bottom: 72px;
+}
+
+.skill h2 {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.skill p {
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.skill .skill__wrapper {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.skill .skill__wrapper h4 {
+  font-size: 25px;
+  flex: 0.4;
+}
+
+.skill .skill__wrapper ul {
+  font-size: 18px;
+  flex: 0.6;
+}
+
+.skill .skill__wrapper ul li {
+  margin-bottom: 4px;
+}
+
+.projects {
+  margin-bottom: 72px;
+}
+
+.projects h2 {
+  font-size: 44px;
+  margin-bottom: 24px;
+}
+
+.projects .projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+.projects .projects__grid .projects__image {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.projects .projects__grid .projects__image img {
+  width: 100%;
+  height: 440px;
   object-fit: cover;
-  border: 1px solid #ededed;
-  border-radius: 16px;
+  border-radius: 20px;
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+  filter: blur(0px);
+}
+
+.projects .projects__grid .projects__image:hover img {
+  filter: blur(2px);
+}
+
+.experience {
+  margin-bottom: 28px;
+}
+
+.experience h2 {
+  font-size: 44px;
+  margin-bottom: 28px;
+}
+
+.experience .experience__wrapper {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.experience .experience__wrapper .experience__wrapper__left {
+  flex: 0.4;
+}
+
+.experience .experience__wrapper .experience__wrapper__left h4 {
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+
+.experience .experience__wrapper .experience__wrapper__left a {
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.experience .experience__wrapper .experience__wrapper__left a:visited {
+  color: initial;
+}
+
+.experience .experience__wrapper .experience__wrapper__left p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: rgba(199, 199, 199);
+}
+
+.experience .experience__wrapper ul {
+  align-self: flex-end;
+  flex: 0.6;
+  font-size: 18px;
+}
+
+.experience .experience__wrapper li {
+  margin-top: 4px;
 }

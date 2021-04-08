@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,55 +16,98 @@
   <body>
     <header>
       <i class="fas fa-moon"></i>
-      <i class="fab fa-github"></i>
+      <a href="https://github.com/HoJin9622" target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
     </header>
 
     <div class="profile__image">
-      <img src="./images/profile.JPG" alt="profile" />
-    </div>
-    <h1>이호진</h1>
-    <span>Software Engineer</span>
-
-    <h2>ABOUT ME.</h2>
-    <p>
-      안녕하세요. 동의대학교를 재학중이고 어니언팜에 재직중인 이호진입니다. 저는
-      React.js와 React Native로 프론트엔드 개발을 하며, Express와 MongoDB로
-      백엔드 개발을 합니다.
-    </p>
-
-    <h2>SKILL.</h2>
-    <p>현재 업무에 사용중 혹은 사용했던 기술들입니다.</p>
-    <h4>Frontend</h4>
-    <ul>
-      <li>ES6</li>
-      <li>React</li>
-      <li>React Native</li>
-    </ul>
-    <h4>Backend</h4>
-    <ul>
-      <li>Node.js</li>
-      <li>Express.js</li>
-    </ul>
-    <h4>DevOps</h4>
-    <ul>
-      <li>MongoDB</li>
-      <li>AWS EC2, S3</li>
-      <li>Nginx</li>
-    </ul>
-
-    <h2>PROJECTS.</h2>
-    <div>
-      <img class="grid__item" src="./images/hallaUniv.png" alt="hallaUniv" />
-      <img class="grid__item" src="./images/hairtalk.png" alt="hairtalk" />
-      <img class="grid__item" src="./images/greencup.png" alt="greencup" />
-      <img class="grid__item" src="./images/traview.png" alt="traview" />
+      <img src="./images/profile.png" alt="profile" />
     </div>
 
-    <h2>EXPERIENCE.</h2>
-    <h4>어니언팜</h4>
-    <a href="http://onionsfarm.com/" target="_blank">http://onionsfarm.com/</a>
-    <p>프론트엔드 개발자</p>
-    <p>2020.09 ~ 현재</p>
+    <section class="introduction">
+      <h1>이호진</h1>
+      <span>Software Engineer</span>
+    </section>
+
+    <section class="about">
+      <h2>ABOUT ME.</h2>
+      <p>
+        안녕하세요.<br />
+        동의대학교를 재학중이고 어니언팜에 재직중인 이호진입니다.<br />
+        저는 React.js와 React Native로 프론트엔드 개발을 하며, Express와
+        MongoDB로 백엔드 개발을 합니다.<br />
+        현재 GraphQL과 Prisma에 대해 공부하고 있습니다.
+      </p>
+    </section>
+
+    <section class="skill">
+      <h2>SKILL.</h2>
+      <p>현재 업무에 사용중 혹은 사용했던 기술들입니다.</p>
+      <div class="skill__wrapper">
+        <h4>Frontend</h4>
+        <ul>
+          <li>ES6</li>
+          <li>React</li>
+          <li>React Native</li>
+        </ul>
+      </div>
+      <div class="skill__wrapper">
+        <h4>Backend</h4>
+        <ul>
+          <li>Node.js</li>
+          <li>Express.js</li>
+        </ul>
+      </div>
+      <div class="skill__wrapper">
+        <h4>DevOps</h4>
+        <ul>
+          <li>MongoDB</li>
+          <li>AWS EC2, S3</li>
+          <li>Nginx</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>PROJECTS.</h2>
+      <div class="projects__grid">
+        <div class="projects__image">
+          <img src="./images/hallaUniv.png" alt="hallaUniv" />
+        </div>
+        <div class="projects__image">
+          <img src="./images/hairtalk.png" alt="hairtalk" />
+        </div>
+        <div class="projects__image">
+          <img src="./images/greencup.png" alt="greencup" />
+        </div>
+        <div class="projects__image">
+          <img src="./images/traview.png" alt="traview" />
+        </div>
+      </div>
+    </section>
+
+    <section class="experience">
+      <h2>EXPERIENCE.</h2>
+
+      <div class="experience__wrapper">
+        <div class="experience__wrapper__left">
+          <h4>어니언팜</h4>
+          <a href="http://onionsfarm.com/" target="_blank"
+            >http://onionsfarm.com/</a
+          >
+          <p>프론트엔드 개발자</p>
+          <p>2020.09 ~ 현재</p>
+        </div>
+
+        <ul>
+          <li>
+            그린컵, 헤어톡, 한라대학교 모바일 LMS, 제주공유, 무림의 고수 등 개발
+          </li>
+          <li>사내 프로젝트 개발</li>
+        </ul>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>
