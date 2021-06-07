@@ -197,12 +197,30 @@ header a .fa-github.dark-theme {
   z-index: 10;
   opacity: 0;
   transition: opacity 0.5s ease-in;
+  flex-direction: column;
+}
+
+.projects .projects__grid .projects__image .projects__inner .projects__row {
+  display: flex;
 }
 
 .projects .projects__grid .projects__image .projects__inner .projects__title {
   color: #000;
   font-size: 24px;
   font-weight: bold;
+}
+
+.projects
+  .projects__grid
+  .projects__image
+  .projects__inner
+  .projects__row
+  a
+  img {
+  width: 40px;
+  height: 40px;
+  filter: blur(0px);
+  margin: 14px;
 }
 
 .experience {
