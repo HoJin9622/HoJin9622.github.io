@@ -291,3 +291,14 @@ header a .fa-github.dark-theme {
 .activity ul li a:visited {
   color: #477dca;
 }
+
+@media screen and (max-width: 768px) {
+  .projects .projects__grid .projects__image img {
+    filter: blur(2px);
+    opacity: 0.8;
+  }
+
+  .projects .projects__grid .projects__image .projects__inner {
+    opacity: 1;
+  }
+}
